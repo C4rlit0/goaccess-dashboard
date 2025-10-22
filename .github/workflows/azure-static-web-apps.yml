@@ -20,7 +20,8 @@ jobs:
         run: |
           wget https://github.com/bastienwirtz/homer/releases/latest/download/homer.zip
           unzip homer.zip -d homer
-          cp assets/config.yml homer/assets/config.yml
+          cp -r assets/* homer/assets/
+          cp -r icons/* homer/assets/icons/
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
