@@ -1,0 +1,14 @@
+---
+# 404 page configuration
+
+subtitle: "GoAccess Viewer for Website logs"
+documentTitle: "404 - Report not found on Pantheon Website Logs" # Customize the browser tab text
+
+# Message
+message:
+  style: "is-dark"
+  title: "Oops mate!"
+  icon: "fas fa-hand-spock"
+  content: "<center><img src='assets/404.png' width='250px' height='250px' /><br>There is nothing here, come back in a few days to see the report.<br><a href='/'>Go back</a></center>"
+
+services: []

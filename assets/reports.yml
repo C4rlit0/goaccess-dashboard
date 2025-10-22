@@ -1,0 +1,18 @@
+---
+# Reports page configuration
+
+subtitle: "GoAccess Viewer for Website logs"
+documentTitle: "Site Reports List - Monthly Pantheon Website Logs" # Customize the browser tab text
+
+# Message
+message:
+  style: "is-dark"
+  title: "Hello mate!"
+  icon: "fas fa-hand-spock"
+  content: "Find here month by month GoAccess reports for specified site.<a href='/'>Go back</a>"
+
+services:
+  - name: "Reports"
+    icon: "fas fa-files"
+    items:
+      

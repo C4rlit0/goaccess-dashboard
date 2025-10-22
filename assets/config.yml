@@ -1,14 +1,16 @@
+---
 # Homepage configuration
-# See https://fontawesome.com/v5/search for icons options
-
-title: "My Awesome Dashboard"
-subtitle: "Homer"
-logo: "assets/logo.png"
-# Alternatively, you can use an emoji as a logo.
-# logo: "👋"
+title: "Pantheon Website Logs"
+subtitle: "GoAccess Viewer for Website logs"
+documentTitle: "Pantheon Website Logs" # Customize the browser tab text
+# logo: "logo.png"
+icon: "fas fa-poo-storm" # Optional icon
 
 header: true
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://github.com/bastienwirtz/homer">Homer</a></p>'
+footer: false
+
+columns: "3"
+connectivityCheck: false
 
 # Optional theme customization
 theme: default
@@ -27,71 +29,41 @@ colors:
     link: "#3273dc"
     link-hover: "#363636"
   dark:
-    highlight-primary: "#3367d6"
-    highlight-secondary: "#4285f4"
-    highlight-hover: "#5a95f5"
-    background: "#121212"
-    card-background: "#1e1e1e"
-    text: "#eaeaea"
-    text-header: "#ffffff"
-    text-title: "#fafafa"
-    text-subtitle: "#f5f5f5"
+    highlight-primary: rgb(24, 24, 35)
+    highlight-secondary: "#1e1e2f"
+    highlight-hover: "#444"
+    background: "#1e1e2f"
+    card-background: rgb(39, 41, 61)
+    text: "#9e9e9e"
+    text-header: rgba(255, 255, 255, 0.6)
+    text-title: "#fff"
+    text-subtitle: "#9e9e9e"
     card-shadow: rgba(0, 0, 0, 0.4)
-    link: "#3273dc"
+    link: "#d048b6"
     link-hover: "#ffdd57"
 
 # Optional message
 message:
-  # Toggable message
-  # MDI icon. See https://materialdesignicons.com/
-  icon: "mdi-human-greeting-variant"
-  # Or an emoji
-  # icon: "👋"
-  title: "Hello there!"
-  content: "This is a customizable message."
-  # You can also use markdown.
-  # content: "This is a customizable message. You can use **markdown**! E.g. `code`"
+  style: "is-dark"
+  title: "Hello mate!"
+  icon: "fas fa-hand-spock"
+  content: "This dashboard lists all active sites hosted on Pantheon and displays their logs with <a href='https://goaccess.io/'>GoAccess</a>"
 
-# Optional links
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Contribute"
-    icon: "fab fa-github"
-    url: "https://github.com/bastienwirtz/homer"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
+  - name: "Pantheon dashboard"
+    url: "https://dashboard.pantheon.io/organizations/1cf08914-8012-42f6-ab34-2b5165ebd360"
+    target: "_blank"
+  - name: "Project Source code"
     icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
+    url: "https://dev.azure.com/pernod-ricard/PR.Pantheon/_git/PR.Pantheon.GoAccessLogs"
 
 # Services
 # First level array represent a group.
-# Options:
-# name: Group name. If not defined, it will not be displayed.
-# icon: Font awesome icon. If not defined, it will not be displayed.
-# E.g. "fas fa-sitemap"
-# services: Service array
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Applications"
-    icon: "fas fa-cloud"
+  - name: "Sites"
+    icon: "fas fa-globe"
     items:
-      - name: "Awesome app"
-        logo: "assets/tools/awesome-app.png"
-        subtitle: "Bookmark example"
-        tag: "app"
-        url: "https://www.reddit.com/r/selfhosted/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Another app"
-        logo: "assets/tools/sample.png"
-        subtitle: "Another great app"
-        tag: "app"
-        url: "#"
-  - name: "Other group"
-    icon: "fas fa-heartbeat"
-    items:
-      - name: "Third app"
-        logo: "assets/tools/sample.png"
-        subtitle: "Nothing special here"
-        tag: "app"
-        # Optional tag style - see https://bulma.io/documentation/elements/tag/
-        # Available colors: is-primary, is-link, is-info, is-success, is-warning, is-danger, is-white, is-light, is-dark, is-black, is-text
-        tagstyle: "is-success"
-        url: "#"
+      
